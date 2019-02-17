@@ -19,7 +19,7 @@ WORKDIR /src/ceres-solver
 RUN mkdir build \
   && cd build \
   && cmake ../. \
-  && make -j8 \
+  && make \
   && make install
 WORKDIR /
 RUN rm -rf /src
